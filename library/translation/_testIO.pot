@@ -1,0 +1,90 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Test IO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-10 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.3"
+
+#. 404 page not found
+msgid "_404-title"
+msgstr "Страница, которую вы ищете, была перемещена, удалена, переименована или никогда не существовала."
+
+#. Home page title
+msgid "_Home title"
+msgstr "Главная Страница"
+
+#. Email link Contact ( 404.php )
+msgid "_Email Contact"
+msgstr "Написать нам"
+
+#. Footer title
+msgid "_Footer title"
+msgstr "Footer"
+
+#. CPT 
+msgid "_Gallerys"
+msgstr "Галереи"
+
+#. CPT 
+msgid "_The gallery"
+msgstr "Галерею"
+
+#. CPT 
+msgid "_gallery"
+msgstr "галерея"
+
+#. CPT_Taxonomy 
+msgid "_Headings"
+msgstr "Рубрики"
+
+#. CPT_Taxonomy 
+msgid "_Rubric Gallery"
+msgstr "Рубрики"
+
+#. Page auth 
+msgid "_Sign in to"
+msgstr "Войдите в"
+
+#. Page auth 
+msgid "_Create Account"
+msgstr "Регистрация"
+
+#. Page auth 
+msgid "_Username"
+msgstr "Имя пользователя"
+
+#. Page auth 
+msgid "_E-mail"
+msgstr "E-mail"
+
+#. Page auth 
+msgid "_check mail"
+msgstr "Подтверждение регистрации будет отправлено на ваш e-mail."
+
+#. Page auth 
+msgid "_button auth"
+msgstr "Регистрация"
+
+#. No post ( single.php )
+msgid "_No Records Found"
+msgstr "Записей не найдено"
+
+#. Section Title ( template-parts/sections/section-with-navigation.php )
+msgid "_Section title"
+msgstr "Последнее обновление"
+
+#. Search title (inc/breadCrumbs.php)
+msgid "_Search title"
+msgstr "Результаты поиска для"
+
+

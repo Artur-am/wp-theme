@@ -1,0 +1,28 @@
+.pagination {
+    margin-top: 27px;
+    margin-bottom: 27px;
+    height: 47px;
+    text-align: center;
+
+    & .page-numbers {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 0 0 2px #aaa;
+        font-size: 13px;
+        display: inline-block;
+        border-radius: 3px;
+        background: linear-gradient(to right, #6aa1e5 15%, #837be2 99%);
+    }
+
+    & > a:hover {
+        color: #000;
+        background: orange;
+    }
+
+    & .current {
+        background: linear-gradient(to top, #d90c0c 15%, red 99%);
+    }
+}

@@ -1,0 +1,95 @@
+.section-wrap-content.gallery {
+    font-size: 0px;
+    text-align: center;
+}
+.post-gallery {
+    display: inline-block;
+    vertical-align: top;
+    font-size: initial;
+    width: 290px;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 7px;
+    border-left: 7px solid transparent;
+    box-sizing: border-box;
+    
+    &:first-child {
+        border-left: none;
+    }
+}
+
+.post-gallery {
+    
+    & .thumb {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center 20%;
+            object-position: center 20%;
+            transition: .3s ease;
+        }
+
+        & .animation {
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            bottom: -60px;
+            transition: .7s ease;
+
+            & .float-left {
+                padding-left: 5px;
+            }
+            & .float-right {
+                padding-right: 5px
+            }
+
+            & .float-left,
+            & .float-right {
+                margin-top: -22px;
+                font-size: 11px;
+                color: #005a79;
+                opacity: 0;
+                transition: 2s linear;
+
+                & > i {
+                    color: #0370967a;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        &:hover {
+            & > img {
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+                transform: scale(1.2);
+            }
+            & .animation {
+                bottom: 10px;
+
+                & .float-left,
+                & .float-right {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    & .info {
+        display: none;
+    }
+}

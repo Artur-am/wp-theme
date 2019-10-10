@@ -1,0 +1,133 @@
+.section-title {
+    display: inline-block;
+}
+.section-card {
+    height: 585px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.section-wrap {
+    width: 100%;
+
+    & > header {
+        height: 67px;
+    }
+}
+
+.section-wrap-nav {
+    & li {
+        display: inline-block;
+        color: #191b32;
+        padding: 4px 14px;
+        border: 1px solid #ebebea;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: border .3s linear,color .3s linear;
+
+        &.active {
+            border-color: #f7623d;
+            color: #f7623d;
+        }
+    }    
+}
+
+/*
+* 1n POST CARD
+*/
+.section-card .card:first-child,
+.section-card .card:nth-child(3n+4) {
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-right-style: solid;
+}
+/*
+*.1n POST CARD
+*/
+/*
+* 2n,3n POST CARD
+*/
+.section-card .card:nth-child(3n+2),
+.section-card .card:nth-child(3n+3) {
+    width: 40%;
+    height: 50%;
+}
+/*
+*.2n,3n POST CARD
+*/
+.section-card .card:nth-child(3n+3) {
+    border-top-style: solid;
+}
+.section-card .card:first-child,
+.section-card .card:nth-child(3n+4),
+.section-card .card:nth-child(3n+3) {
+    margin-bottom: 37px;
+}
+.section-card .card:first-child,
+.section-card .card:nth-child(1n+2) {
+    border-width: 3px;
+    border-color: #fff;
+}
+
+/*
+*  First post
+*/
+.section-wrap .post:nth-child(1){
+    width: 50%;
+    height: 331px;
+    float:left;
+}
+/*
+*. First post section
+*/
+/*
+*  Other post section
+*/
+$sectionPostBorder = 6px solid transparent;
+
+.section-wrap .post:nth-child(1n+2){
+    width: 50%;
+    height: 82px;
+    float: right;
+    border-left: $sectionPostBorder;
+    border-top: $sectionPostBorder;
+    border-bottom: $sectionPostBorder;
+    box-sizing: border-box;
+
+
+    & .thumb {
+        display: inline-block;
+        width: 18%;
+        height: 100%;
+        overflow: hidden;
+        & img {
+            width: 130px;
+            height: 100%;
+        }
+    }
+
+    & .info {
+        display: inline-block;
+        width: 70%;
+        padding-top: 4px;
+        padding-left: 9px;
+
+        & a {
+            color: #191b32;
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color .3s linear;
+        }
+
+        time {
+            font-size: 13px;
+            vertical-align: top;
+        }
+    }
+}
+/*
+*.Other post section
+*/

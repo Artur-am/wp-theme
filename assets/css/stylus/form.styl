@@ -1,0 +1,39 @@
+.testIO-form {
+    
+    & label,
+    & textarea {
+        vertical-align: middle;
+    }
+
+    & textarea,
+    & input[type='text'],
+    & input[type='email'],
+    & input[type='password'] {
+        display: block;
+        width: 95%;
+        margin-top: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 14px 14px 14px 28px;
+        border: none;
+        background-color: #f4f8f7;
+        color: #878988;
+    }
+
+    & input[type='submit'] {
+        padding: 11px 31px;
+        border-radius: 17px;
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: none;
+        background-image: linear-gradient(to right,#868F96,#596164);
+        text-shadow: 0 0 2px #868F96
+
+        &:hover {
+            color: #000;
+            background-image: linear-gradient(to right,#596164, #868F96);
+        }
+    }
+}

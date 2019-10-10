@@ -1,0 +1,89 @@
+/*
+    Theme Name: Test IO
+    Theme URI: https://wordpress.org/
+    Author: Arthur
+    Version: 1.0
+*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fffeff;
+}
+ul {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+time {
+  text-transform: uppercase;
+  font-family: Montserrat,sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.v-middle {
+  vertical-align: middle;
+}
+.v-top {
+  vertical-align: top;
+}
+.v-b-middle:before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-left:after,
+.float-right:after {
+  content: "";
+  clear: both;
+}
+.align-right {
+  text-align: right;
+}
+
+.test {
+  width: 150px;
+  height: 250px;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  transition: .3s ease;
+}
+
+.sidebar-list ul.menu li.current-category-ancestor > a,
+.sidebar-list ul.menu li.current-category-parent > a {
+  color: orange;
+}
+
+.sidebar-list ul.menu li.current-menu-item > a,
+ul.nav li.current-menu-item > a {
+  color: orangered;
+}
+.basket {
+  width: 350px;
+  height: 450px;
+  background-color: #e9e9e9;
+}

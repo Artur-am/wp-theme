@@ -1,0 +1,82 @@
+.bread-crumbs {
+    display: inline-block;
+    color: black;
+    box-shadow: 0 0 2px #aaaaaa;
+    counter-reset: flag;
+
+    & > a {
+        padding-left: 52px;
+        padding-right: 10px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        transition: background-color 0.1s;
+
+        &:first-child {
+            padding-left: 37px;
+            &::before {
+                left: 5px;
+            }
+        }
+
+        &::before {
+            content: counter(flag);
+            counter-increment: flag;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 23px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            line-height: 20px;
+            font-size: 11px;
+            text-align: center;
+            background-color: #fff;
+            color: #007091;
+            box-shadow: inset 0 0 2px #979797;
+        }
+
+    }
+
+    & > a,
+    & > span {
+        padding-right: 10px;
+        line-height: 36px;
+        float: left;
+        position: relative;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -18px;
+            z-index: 1;
+            width: 36px;
+            height: 36px;
+            background-color: white;
+            border-radius: 50px 0 0 0;
+            box-shadow: 1px 1px 0 1px #dddddd;
+            transform: rotate(-45deg) scale(0.73);
+            transition: background-color 0.1s;
+        }
+    }
+
+    & > a:hover {
+        &,
+        &::after {
+            background-color: #f1c40f;
+            color: $hoverLink;
+        }
+    }
+
+    & > span {
+        padding-left: 26px;
+        background-image: linear-gradient(to right, #7a00bf 15%, #000 50%, #bd1b00 99%);
+        text-shadow: 0 0 2px rgba(12,120,143,0.212);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
